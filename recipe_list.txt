@@ -1,1 +1,1 @@
-economist
+economist.recipe
