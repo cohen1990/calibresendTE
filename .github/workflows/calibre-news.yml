@@ -45,7 +45,7 @@ jobs:
           fi
       - name: Set up Python
         if: ${{ success() }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install Calibre
@@ -57,7 +57,7 @@ jobs:
           sudo -v && wget -nv -O- $url | sudo sh /dev/stdin
       - name: Retrieving Recipe
         if: ${{ success() }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Checking Recipe
         if: ${{ success() }}
         run: |
